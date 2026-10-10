@@ -8,14 +8,15 @@
 <meta name="keywords" content="guardería canina en Bogotá, colegio canino Bogotá, pet shop Calle 98, guardería para perros Bogotá, Petville">
 <meta name="geo.region" content="CO-DC">
 <meta name="geo.placename" content="Bogotá">
-<link rel="canonical" href="http://www.petville.club/">
+<link rel="canonical" href="https://www.petville.club/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Petville | Guardería y Colegio Canino en Bogotá">
 <meta property="og:description" content="Cuidado, socialización y diversión para tu perro en la Calle 98, Bogotá.">
 <meta property="og:locale" content="es_CO">
 <meta name="theme-color" content="#2E4475">
 <link rel="icon" href="img/logo.png">
-<meta property="og:image" content="img/logo.png">
+<meta property="og:image" content="https://www.petville.club/img/logo.png">
+<meta property="og:url" content="https://www.petville.club/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
@@ -25,7 +26,7 @@
   "@context": "https://schema.org",
   "@type": "PetStore",
   "name": "Petville – Guardería y Colegio Canino – Pet Shop",
-  "url": "http://www.petville.club/",
+  "url": "https://www.petville.club/",
   "telephone": "+573244366862",
   "hasMap": "https://www.google.com/maps/place/PETVILLE+GUARDERIA+Y+COLEGIO+CANINO+-+PET+SHOP/@4.6873954,-74.0684043,1138m/data=!3m2!1e3!4b1!4m6!3m5!1s0x8e3f9bbddd53f887:0x6c6ded10f2dff97d!8m2!3d4.6873954!4d-74.0684043!16s%2Fg%2F11j_1gnks6?entry=ttu&g_ep=EgoyMDI2MTAwNy4wIKXMDSoASAFQAw%3D%3D",
   "geo": { "@type": "GeoCoordinates", "latitude": 4.6873954, "longitude": -74.0684043 },
@@ -94,21 +95,25 @@ const SITE = {
     // Cada grupo: bloques con filas [concepto, precio]
     pricing: [
       { name: "Cuidado por horas", sub: "Menos de 15 kilos", color: "mustard",
-        blocks: [{ rows: [["1 hora", "$9.000"], ["2 a 6 horas", "$8.000 c/u"], ["7 horas o más", "Pasadía"]] }] },
+        blocks: [{ rows: [["1 hora", "$9.000"], ["2 a 6 horas", "$8.000 c/u"], ["7 horas o más", "Pasadía"]] }],
+        foot: "Tarifa para perros de menos de 15 kilos. Para 15 kilos o más, consúltanos por WhatsApp." },
       { name: "Pasadía", sub: "Cubre de 7 a 12/14 horas durante el día", color: "turquoise",
         blocks: [{ rows: [["Menos de 15 kilos", "$45.000"], ["15 kilos o más", "$49.000"]] }] },
-      { name: "Half a day", sub: "Cubre 6 horas durante el día", color: "coral",
+      { name: "Medio día", sub: "Cubre 6 horas durante el día", color: "coral",
         blocks: [
           { title: "Con ruta · menos de 15 kilos", rows: [["4 días", "$128.000"], ["8 días", "$248.000"], ["12 días", "$348.000"], ["20 días", "$530.000"]] },
           { title: "Sin ruta · 15 kilos o más", rows: [["4 días", "$128.000"], ["8 días", "$240.000"], ["12 días", "$336.000"], ["20 días", "$500.000"]] }
-        ] },
+        ],
+        foot: "Para otras combinaciones de peso y ruta, consúltanos por WhatsApp." },
       { name: "Plan mensual", sub: "", color: "mustard",
         blocks: [
           { title: "Con ruta · 15 kilos o más", rows: [["4 días", "$204.000"], ["8 días", "$392.000"], ["12 días", "$552.000"], ["16 días", "$704.000"], ["20 días", "$810.000"]] },
           { title: "Sin ruta · menos de 15 kilos", rows: [["4 días", "$164.000"], ["8 días", "$312.000"], ["12 días", "$432.000"], ["16 días", "$544.000"], ["20 días", "$660.000"]] }
-        ] },
+        ],
+        foot: "Para otras combinaciones de peso y ruta, consúltanos por WhatsApp." },
       { name: "Hotel", sub: "Menos de 15 kilos", color: "turquoise",
-        blocks: [{ rows: [["24 horas a 7 noches", "$50.000"], ["De 8 a 19 noches", "$42.000"], ["20 noches en adelante", "$40.000"]] }] },
+        blocks: [{ rows: [["24 horas a 7 noches", "$50.000"], ["De 8 a 19 noches", "$42.000"], ["20 noches en adelante", "$40.000"]] }],
+        foot: "Tarifa para perros de menos de 15 kilos. Para 15 kilos o más, consúltanos por WhatsApp." },
       { name: "Tortas y muffins", sub: "Horneados con alimentos frescos y 100% naturales, libres de conservantes", color: "coral",
         blocks: [
           { rows: [["Torta personal 15 x 15 x 7 cm (incluye 2 fotos del cumpleañero)", "$35.000"], ["Muffin", "$5.000"], ["Proteína: pollo o carne de res", "Incluida"], ["Proteína: cordero o salmón", "+$5.000"]] },
@@ -143,12 +148,12 @@ const SITE = {
 
   reviews: {
     title: "Lo que dicen las familias",
-    badgeNote: "Opiniones verificadas en Google",
+    badgeNote: "Extractos de opiniones de Google. Lee todas en nuestra ficha de Google Maps.",
     // Pega aquí solo reseñas con autorización de quien las escribió.
     items: [
-      { text: "Súper recomendados! Era la primera vez que mi perrito Benji socializaba con otros y tenía un poco de nervios por ser un husky, pero la experiencia fue excelente. El cuidado que le dieron fue lo mejor; se nota el amor y la paciencia que tienen con los animales. Sin duda volveremos, me da mucha tranquilidad dejarlo en sus manos 🐾💗 Muchas gracias!!", author: "Ana Sopó", when: "Hace 2 meses" },
-      { text: "Excelente opción para los gorditos. Nos sentimos muy confiados al dejar a nuestro Choco a su cuidado. Nos gusta mucho la organización y como nos mantienen informados con fotos y videos de la estancia del gordo en sus instalaciones.", author: "Patricia Ovalle", when: "Hace 8 meses" },
-      { text: "Excelente! Tengo un pastor ganadero australiano que ha sido mi compañero por 12 años y siempre he tenido mucha precaución al dejarlo al cuidado de alguien más, con PET VILLE he encontrado la tranquilidad de saber que mi amigo está con el mejor cuidado posible, siempre es feliz. Han sido un gran apoyo cuando tengo que viajar, muy recomendado", author: "Cliente de Google", when: "Hace 8 meses" }
+      { text: "La experiencia fue excelente. El cuidado que le dieron fue lo mejor; se nota el amor y la paciencia que tienen con los animales.", author: "Ana", when: "Hace 2 meses" },
+      { text: "Nos sentimos muy confiados al dejar a nuestro Choco a su cuidado. Nos gusta mucho la organización…", author: "Patricia", when: "Hace 8 meses" },
+      { text: "…con PET VILLE he encontrado la tranquilidad de saber que mi amigo está con el mejor cuidado posible, siempre es feliz.", author: "Cliente de Google", when: "Hace 8 meses" }
     ]
   },
 
@@ -176,8 +181,7 @@ const SITE = {
     whatsLabel: "WhatsApp",
     socialLabel: "Redes",
     social: [
-      { name: "Instagram", url: "https://www.instagram.com/welcometopetville/" },
-      { name: "Facebook", url: "[URL DE FACEBOOK]" }
+      { name: "Instagram", url: "https://www.instagram.com/welcometopetville/" }
     ],
     mapTitle: "Mapa de Petville en la Calle 98 #62-11, Bogotá",
     btnBook: "Reservar",
