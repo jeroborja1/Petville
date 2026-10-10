@@ -27,6 +27,7 @@
   "name": "Petville – Guardería y Colegio Canino – Pet Shop",
   "url": "http://www.petville.club/",
   "telephone": "+573244366862",
+  "hasMap": "https://www.google.com/maps/place/PETVILLE+GUARDERIA+Y+COLEGIO+CANINO+-+PET+SHOP/@4.6873954,-74.0684043,1138m/data=!3m2!1e3!4b1!4m6!3m5!1s0x8e3f9bbddd53f887:0x6c6ded10f2dff97d!8m2!3d4.6873954!4d-74.0684043!16s%2Fg%2F11j_1gnks6?entry=ttu&g_ep=EgoyMDI2MTAwNy4wIKXMDSoASAFQAw%3D%3D",
   "geo": { "@type": "GeoCoordinates", "latitude": 4.6873954, "longitude": -74.0684043 },
   "openingHoursSpecification": [
     { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "06:00", "closes": "20:00" },
@@ -55,7 +56,8 @@ const SITE = {
   whatsappUrl: "https://wa.me/573244366862",
   whatsappMsg: "?text=" + encodeURIComponent("¡Hola Petville! Quiero información para mi perro 🐶"),
   calendlyUrl: "https://calendly.com/petvillespa/60min",
-  mapQuery: "4.6873954,-74.0684043",
+  mapQuery: "PETVILLE GUARDERIA Y COLEGIO CANINO - PET SHOP",
+  mapLatLng: "4.6873954,-74.0684043",
   badge: "4.9 en Google · 99 opiniones",
 
   nav: [
@@ -545,7 +547,7 @@ $('ctInfo').innerHTML =
   `<dt>🕒 ${esc(C.hoursLabel)}</dt><dd>${esc(C.hours)}</dd>` +
   `<dt>💬 ${esc(C.whatsLabel)}</dt><dd><a href="${whatsUrl}" target="_blank" rel="noopener">${esc(SITE.whatsappDisplay)}</a></dd>` +
   `<dt>📸 ${esc(C.socialLabel)}</dt><dd>${social}</dd>`;
-$('mapFrame').src = 'https://www.google.com/maps?q=' + encodeURIComponent(SITE.mapQuery) + '&output=embed';
+$('mapFrame').src = 'https://www.google.com/maps?q=' + encodeURIComponent(SITE.mapQuery) + '&ll=' + SITE.mapLatLng + '&z=17&output=embed';
 $('mapFrame').title = C.mapTitle;
 $('foot').textContent = SITE.footer;
 
