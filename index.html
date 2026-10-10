@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Petville | Guardería y Colegio Canino en Bogotá – Calle 98</title>
+<meta name="description" content="Petville: guardería canina, colegio canino y pet shop en Bogotá, Calle 98 #62-11. Cuidado y socialización para tu perro. 4.9 en Google · 99 opiniones.">
+<meta name="keywords" content="guardería canina en Bogotá, colegio canino Bogotá, pet shop Calle 98, guardería para perros Bogotá, Petville">
+<meta name="geo.region" content="CO-DC">
+<meta name="geo.placename" content="Bogotá">
+<link rel="canonical" href="http://www.petville.club/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Petville | Guardería y Colegio Canino en Bogotá">
+<meta property="og:description" content="Cuidado, socialización y diversión para tu perro en la Calle 98, Bogotá.">
+<meta property="og:locale" content="es_CO">
+<meta name="theme-color" content="#2E4475">
+<link rel="icon" href="img/logo.png">
+<meta property="og:image" content="img/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "PetStore",
+  "name": "Petville – Guardería y Colegio Canino – Pet Shop",
+  "url": "http://www.petville.club/",
+  "telephone": "+573244366862",
+  "geo": { "@type": "GeoCoordinates", "latitude": 4.6873954, "longitude": -74.0684043 },
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "06:00", "closes": "20:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday","Sunday"], "opens": "07:00", "closes": "19:00" }
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Cl. 98 #62-11",
+    "addressLocality": "Bogotá",
+    "addressCountry": "CO"
+  },
+  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "99" }
+}
+</script>
+
+<!-- =====================================================================
+     VARIABLES: todo el texto y los enlaces del sitio se editan aquí.
+     Lo que está entre [CORCHETES] es un dato pendiente por completar.
+     ===================================================================== -->
+<script>
+const SITE = {
+  brand: "Petville",
+  brandFull: "Guardería y Colegio Canino · Pet Shop",
+  address: "Cl. 98 #62-11, Bogotá",
+  whatsappDisplay: "324 4366862",
+  whatsappUrl: "https://wa.me/573244366862",
+  whatsappMsg: "?text=" + encodeURIComponent("¡Hola Petville! Quiero información para mi perro 🐶"),
+  calendlyUrl: "https://calendly.com/petvillespa/60min",
+  mapQuery: "4.6873954,-74.0684043",
+  badge: "4.9 en Google · 99 opiniones",
+
+  nav: [
+    ["#servicios", "Servicios"],
+    ["#como-funciona", "Cómo funciona"],
+    ["#galeria", "Galería"],
+    ["#opiniones", "Opiniones"],
+    ["#faq", "Preguntas"],
+    ["#contacto", "Contacto"]
+  ],
+  navCta: "Reservar",
+
+  hero: {
+    eyebrow: "Cuidado como en casa · Bogotá",
+    title: "Donde tu perro juega, aprende y se siente en casa",
+    text: "Cuidado con cariño y socialización guiada para que tu peludo haga amigos y vuelva a casa feliz.",
+    btnBook: "Reservar",
+    btnWhats: "Escríbenos por WhatsApp",
+    imgAlt: "Perro feliz jugando en Petville, guardería canina en Bogotá"
+  },
+
+  services: {
+    title: "Todo para tu peludo",
+    intro: "Espacios pensados para que tu perro esté bien cuidado.",
+    items: [
+      { icon: "🏡", name: "Guardería", text: "Cuidado por horas, medio día, pasadía o plan mensual, con o sin ruta.", color: "mustard" },
+      { icon: "🛏️", name: "Hotel", text: "Para cuando te ausentas: tu peludo se queda con nosotros por noches.", color: "turquoise" },
+      { icon: "🎓", name: "Colegio canino", text: "Aprendizaje y socialización con otros perros, a su ritmo.", color: "coral" },
+      { icon: "🦴", name: "Pet shop", text: "Productos para el día a día y tortas y muffins horneados para celebrar.", color: "cream" }
+    ],
+    pricingTitle: "Tarifas",
+    pricingIntro: "Valores en pesos colombianos. Escríbenos por WhatsApp para armar el plan de tu peludo.",
+    pricingFoot: "Tarifas sujetas a confirmación por WhatsApp.",
+    // Cada grupo: bloques con filas [concepto, precio]
+    pricing: [
+      { name: "Cuidado por horas", sub: "Menos de 15 kilos", color: "mustard",
+        blocks: [{ rows: [["1 hora", "$9.000"], ["2 a 6 horas", "$8.000 c/u"], ["7 horas o más", "Pasadía"]] }] },
+      { name: "Pasadía", sub: "Cubre de 7 a 12/14 horas durante el día", color: "turquoise",
+        blocks: [{ rows: [["Menos de 15 kilos", "$45.000"], ["15 kilos o más", "$49.000"]] }] },
+      { name: "Half a day", sub: "Cubre 6 horas durante el día", color: "coral",
+        blocks: [
+          { title: "Con ruta · menos de 15 kilos", rows: [["4 días", "$128.000"], ["8 días", "$248.000"], ["12 días", "$348.000"], ["20 días", "$530.000"]] },
+          { title: "Sin ruta · 15 kilos o más", rows: [["4 días", "$128.000"], ["8 días", "$240.000"], ["12 días", "$336.000"], ["20 días", "$500.000"]] }
+        ] },
+      { name: "Plan mensual", sub: "", color: "mustard",
+        blocks: [
+          { title: "Con ruta · 15 kilos o más", rows: [["4 días", "$204.000"], ["8 días", "$392.000"], ["12 días", "$552.000"], ["16 días", "$704.000"], ["20 días", "$810.000"]] },
+          { title: "Sin ruta · menos de 15 kilos", rows: [["4 días", "$164.000"], ["8 días", "$312.000"], ["12 días", "$432.000"], ["16 días", "$544.000"], ["20 días", "$660.000"]] }
+        ] },
+      { name: "Hotel", sub: "Menos de 15 kilos", color: "turquoise",
+        blocks: [{ rows: [["24 horas a 7 noches", "$50.000"], ["De 8 a 19 noches", "$42.000"], ["20 noches en adelante", "$40.000"]] }] },
+      { name: "Tortas y muffins", sub: "Horneados con alimentos frescos y 100% naturales, libres de conservantes", color: "coral",
+        blocks: [
+          { rows: [["Torta personal 15 x 15 x 7 cm (incluye 2 fotos del cumpleañero)", "$35.000"], ["Muffin", "$5.000"], ["Proteína: pollo o carne de res", "Incluida"], ["Proteína: cordero o salmón", "+$5.000"]] },
+          { title: "Ingredientes", text: "Avena, banano, zanahoria, manzana, mantequilla de maní, yogurt griego, huevo y galletas de avena y miel." }
+        ],
+        foot: "Entregas solo de lunes a viernes. Pedidos con 2 días de anticipación. El domicilio tiene un valor adicional según la zona." }
+    ]
+  },
+
+  how: {
+    title: "Así de fácil",
+    steps: [
+      { n: "1", name: "Reservas", text: "Elige tu fecha en nuestro calendario en línea o escríbenos por WhatsApp." },
+      { n: "2", name: "Dejas a tu peludo", text: "Lo recibimos con cariño en la Calle 98 y tú sigues con tu día." },
+      { n: "3", name: "Recibes reportes", text: "Te contamos cómo le fue, para que estés tranquilo." }
+    ]
+  },
+
+  gallery: {
+    title: "Momentos Petville",
+    intro: "Algunas de nuestras mejores travesuras.",
+    // Para usar fotos reales: pon la ruta en "src" (ej. "img/foto1.jpg") y ajusta el "alt".
+    items: [
+      { src: "img/g2.jpg", alt: "Equipo de Petville posando con perros sobre el pasto", wide: true },
+      { src: "img/g4.jpg", alt: "Perro chocolate con corbatín azul en la guardería canina Petville" },
+      { src: "img/g3.jpg", alt: "Perro shih tzu mirando a la cámara en Petville, Bogotá" },
+      { src: "img/g6.jpg", alt: "Perros jugando juntos en un salón de Petville" },
+      { src: "img/g5.jpg", alt: "Perro con disfraz de Halloween en Petville" }
+    ],
+    placeholder: "Tu foto aquí"
+  },
+
+  reviews: {
+    title: "Lo que dicen las familias",
+    badgeNote: "Opiniones verificadas en Google",
+    // Pega aquí solo reseñas con autorización de quien las escribió.
+    items: [
+      { text: "Súper recomendados! Era la primera vez que mi perrito Benji socializaba con otros y tenía un poco de nervios por ser un husky, pero la experiencia fue excelente. El cuidado que le dieron fue lo mejor; se nota el amor y la paciencia que tienen con los animales. Sin duda volveremos, me da mucha tranquilidad dejarlo en sus manos 🐾💗 Muchas gracias!!", author: "Ana Sopó", when: "Hace 2 meses" },
+      { text: "Excelente opción para los gorditos. Nos sentimos muy confiados al dejar a nuestro Choco a su cuidado. Nos gusta mucho la organización y como nos mantienen informados con fotos y videos de la estancia del gordo en sus instalaciones.", author: "Patricia Ovalle", when: "Hace 8 meses" },
+      { text: "Excelente! Tengo un pastor ganadero australiano que ha sido mi compañero por 12 años y siempre he tenido mucha precaución al dejarlo al cuidado de alguien más, con PET VILLE he encontrado la tranquilidad de saber que mi amigo está con el mejor cuidado posible, siempre es feliz. Han sido un gran apoyo cuando tengo que viajar, muy recomendado", author: "Cliente de Google", when: "Hace 8 meses" }
+    ]
+  },
+
+  faq: {
+    title: "Preguntas frecuentes",
+    items: [
+      { q: "¿Qué requisitos hay para ingresar?",
+        a: "1) Llena el formulario de ingreso. 2) Envía las últimas fechas de desparasitación interna y externa. 3) Envía foto del carnet de vacunación donde se vean los datos de tu peludo, con el último refuerzo anual al día. Si tu peludo tiene algún comportamiento que pueda causar altercados con perros o personas, debes informarlo previamente." },
+      { q: "¿Qué vacunas necesita mi perro?",
+        a: "Es obligatoria la vacuna de tos de perreras: en colegios y guarderías es una bacteria muy común, y es mejor prevenir. Además, el carnet debe mostrar el último refuerzo anual al día." },
+      { q: "¿Cuándo no puede ingresar mi perro?",
+        a: "No recibimos perritos con síntomas como tos, diarrea o vómito que puedan ser propios de infecciones virales o bacterianas, por seguridad de los otros peludos y por comodidad del tuyo. Tampoco recibimos perritas en celo." },
+      { q: "¿Cuáles son los horarios?",
+        a: "Atendemos de lunes a viernes de 6 a.m. a 8 p.m., y sábados y domingos de 7 a.m. a 7 p.m. En festivos el horario puede variar: escríbenos por WhatsApp para confirmarlo." },
+      { q: "¿Reciben perros de todos los tamaños?",
+        a: "Manejamos tarifas para perros de menos de 15 kilos y de 15 kilos o más. Cuéntanos cómo es tu perro por WhatsApp y te orientamos." }
+    ]
+  },
+
+  contact: {
+    title: "Ven a conocernos",
+    addressLabel: "Dirección",
+    hoursLabel: "Horario",
+    hours: "Lunes a viernes: 6 a.m. a 8 p.m. · Sábado y domingo: 7 a.m. a 7 p.m. (en festivos puede variar: escríbenos para confirmar)",
+    whatsLabel: "WhatsApp",
+    socialLabel: "Redes",
+    social: [
+      { name: "Instagram", url: "https://www.instagram.com/welcometopetville/" },
+      { name: "Facebook", url: "[URL DE FACEBOOK]" }
+    ],
+    mapTitle: "Mapa de Petville en la Calle 98 #62-11, Bogotá",
+    btnBook: "Reservar",
+    btnWhats: "Escríbenos por WhatsApp"
+  },
+
+  footer: "© " + new Date().getFullYear() + " Petville. Hecho con ❤️ y muchas huellitas.",
+  whatsFloatLabel: "Escríbenos por WhatsApp"
+};
+</script>
+
+<style>
+:root{
+  --mustard:#FFC83D; --turquoise:#2EC4B6; --coral:#FF6B6B; --cream:#FFF8EC; --brown:#1F2E58; --navy:#2E4475;
+  --r:28px; --shadow:0 8px 0 rgba(31,46,88,.12);
+  --paw:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cg fill='%231F2E58' fill-opacity='.06'%3E%3Cellipse cx='30' cy='38' rx='7' ry='9' transform='rotate(-20 30 38)'/%3E%3Cellipse cx='46' cy='30' rx='7' ry='9'/%3E%3Cellipse cx='62' cy='38' rx='7' ry='9' transform='rotate(20 62 38)'/%3E%3Cpath d='M46 46c-10 0-20 10-17 19 2 6 9 6 17 3 8 3 15 3 17-3 3-9-7-19-17-19z'/%3E%3C/g%3E%3C/svg%3E");
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:76px}
+body{margin:0;font-family:'Nunito',sans-serif;font-size:1.05rem;line-height:1.6;color:var(--brown);background:var(--cream) var(--paw)}
+h1,h2,h3{font-family:'Fredoka',sans-serif;line-height:1.15;margin:0 0 .5em}
+h1{font-size:clamp(2.2rem,8vw,3.8rem);font-weight:700}
+h2{font-size:clamp(1.8rem,6vw,2.7rem);font-weight:600;text-align:center}
+h3{font-size:1.35rem;font-weight:600}
+p{margin:0 0 1em}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{width:min(1100px,100% - 2.5rem);margin-inline:auto}
+section{position:relative;padding:3.5rem 0 4.5rem}
+.intro{text-align:center;max-width:560px;margin:-.2rem auto 2rem}
+:focus-visible{outline:3px solid var(--brown);outline-offset:3px;border-radius:8px}
+
+/* Botones */
+.btn{display:inline-flex;align-items:center;gap:.5rem;font-family:'Fredoka',sans-serif;font-weight:600;font-size:1.1rem;
+  padding:.85rem 1.6rem;border-radius:999px;border:3px solid var(--brown);text-decoration:none;cursor:pointer;
+  box-shadow:0 5px 0 var(--brown);transition:transform .15s ease,box-shadow .15s ease}
+.btn:hover{transform:translateY(-3px);box-shadow:0 8px 0 var(--brown)}
+.btn:active{transform:translateY(3px);box-shadow:0 2px 0 var(--brown)}
+.btn-coral{background:var(--coral);color:var(--brown)}
+.btn-turq{background:var(--turquoise);color:var(--brown)}
+.btn-cream{background:var(--cream)}
+.btn-row{display:flex;flex-wrap:wrap;gap:1rem}
+
+/* Menú */
+header{position:sticky;top:0;z-index:50;background:var(--navy);color:var(--cream);border-bottom:4px solid var(--mustard)}
+.bar{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font-family:"Fredoka",sans-serif;font-weight:700;font-size:1.7rem;text-decoration:none;display:flex;align-items:center;gap:.6rem}
+.logo img{width:46px;height:46px;border-radius:14px;border:2px solid var(--mustard)}
+.logo span{color:var(--mustard)}
+nav ul{list-style:none;margin:0;padding:0;display:flex;gap:1.2rem;align-items:center}
+nav a{text-decoration:none;font-weight:800}
+nav a:hover{color:var(--mustard)}
+nav a.btn:hover{color:var(--brown)}
+.burger{display:none;background:var(--mustard);border:3px solid var(--brown);border-radius:14px;width:46px;height:42px;font-size:1.4rem;cursor:pointer}
+@media(max-width:860px){
+  .burger{display:block}
+  nav{position:absolute;left:0;right:0;top:64px;background:var(--navy);border-bottom:4px solid var(--mustard);
+    max-height:0;overflow:hidden;transition:max-height .35s ease}
+  nav.open{max-height:480px}
+  nav ul{flex-direction:column;padding:1rem 1.25rem 1.5rem;align-items:stretch;gap:.4rem}
+  nav li a{display:block;padding:.6rem 0}
+  nav .btn{justify-content:center}
+}
+
+/* Hero */
+#hero{background:var(--mustard);padding-top:3rem;overflow:hidden}
+.hero-grid{display:grid;gap:2rem;align-items:center}
+.eyebrow{display:inline-block;background:var(--cream);border:3px solid var(--brown);border-radius:999px;padding:.2rem 1rem;font-weight:800;margin-bottom:1rem}
+#hero p.lead{font-size:1.2rem;max-width:520px}
+.hero-art{position:relative;aspect-ratio:1;max-width:420px;width:100%;margin-inline:auto;background:var(--turquoise);
+  border:4px solid var(--brown);border-radius:48% 52% 45% 55%/55% 45% 55% 45%;display:grid;place-items:center;
+  font-size:min(38vw,11rem);animation:morph 9s ease-in-out infinite;box-shadow:var(--shadow)}
+.hero-art img{width:100%;height:100%;object-fit:cover;border-radius:inherit}
+.float{position:absolute;font-size:2.2rem;animation:bob 3.5s ease-in-out infinite}
+.f1{top:2%;right:6%}.f2{bottom:8%;left:0;animation-delay:.8s}.f3{top:30%;left:-4%;animation-delay:1.6s}
+@keyframes morph{50%{border-radius:55% 45% 52% 48%/45% 55% 45% 55%}}
+@keyframes bob{50%{transform:translateY(-12px) rotate(8deg)}}
+@media(min-width:860px){.hero-grid{grid-template-columns:1.1fr .9fr}}
+
+/* Olas */
+.wave{position:absolute;left:0;right:0;bottom:-1px;line-height:0;pointer-events:none}
+.wave svg{display:block;width:100%;height:clamp(40px,7vw,90px)}
+.wave.top{top:-1px;bottom:auto;transform:rotate(180deg)}
+
+/* Servicios */
+.cards{display:grid;gap:1.5rem;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+.card{border:3px solid var(--brown);border-radius:var(--r);padding:1.6rem;box-shadow:var(--shadow);
+  transition:transform .25s ease;text-align:center;background:#fff}
+.card:nth-child(odd){transform:rotate(-1.5deg)}.card:nth-child(even){transform:rotate(1.5deg)}
+.card:hover{transform:rotate(0) translateY(-6px) scale(1.02)}
+.card .ico{font-size:2.8rem;display:block;margin-bottom:.3rem}
+.card.mustard{background:var(--mustard)}.card.turquoise{background:var(--turquoise)}
+.card.coral{background:var(--coral)}.card.cream{background:var(--cream)}
+.card p{margin:0}
+
+/* Tarifas */
+.prices{display:grid;gap:1.5rem;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));align-items:start}
+.price{border:3px solid var(--brown);border-radius:var(--r);padding:1.4rem;box-shadow:var(--shadow);background:#fff}
+.price.mustard{background:var(--mustard)}.price.turquoise{background:var(--turquoise)}.price.coral{background:var(--coral)}
+.price h3{margin:0}
+.price .sub{margin:.1rem 0 .8rem;font-weight:700;font-size:.95rem}
+.price h4{font-family:'Fredoka',sans-serif;margin:1rem 0 .3rem;font-size:1.05rem}
+.price ul{list-style:none;margin:0;padding:0;background:var(--cream);color:var(--brown);border:3px solid var(--brown);border-radius:18px;overflow:hidden}
+.price li{display:flex;justify-content:space-between;gap:1rem;padding:.55rem .9rem;border-bottom:2px dashed rgba(31,46,88,.25)}
+.price li:last-child{border-bottom:0}
+.price li b{font-family:'Fredoka',sans-serif;white-space:nowrap}
+.price .txt{margin:.4rem 0 0;font-size:.95rem}
+.price .foot{margin:1rem 0 0;font-size:.9rem;font-weight:700}
+
+/* Cómo funciona */
+#como-funciona{background:var(--turquoise)}
+.steps{display:grid;gap:1.5rem;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));counter-reset:s}
+.step{background:var(--cream);border:3px solid var(--brown);border-radius:var(--r);padding:2.4rem 1.5rem 1.5rem;
+  position:relative;text-align:center;box-shadow:var(--shadow)}
+.step .n{position:absolute;top:-1.4rem;left:50%;translate:-50% 0;width:3rem;height:3rem;border-radius:50%;
+  background:var(--coral);color:#fff;border:3px solid var(--brown);display:grid;place-items:center;
+  font-family:'Fredoka',sans-serif;font-weight:700;font-size:1.5rem}
+.step p{margin:0}
+
+/* Galería */
+.grid{display:grid;gap:1rem;grid-template-columns:repeat(2,1fr)}
+@media(min-width:700px){.grid{grid-template-columns:repeat(3,1fr)}}
+.grid figure{margin:0;aspect-ratio:1;border:3px solid var(--brown);border-radius:var(--r);overflow:hidden;
+  transition:transform .25s ease;box-shadow:var(--shadow)}
+.grid figure:hover{transform:scale(1.04) rotate(-1deg)}
+.grid img{width:100%;height:100%;object-fit:cover}
+.grid figure.wide{grid-column:span 2;aspect-ratio:2/1}
+.ph{width:100%;height:100%;display:grid;place-items:center;text-align:center;font-family:'Fredoka',sans-serif;font-weight:500;padding:.5rem}
+.ph b{display:block;font-size:2.4rem}
+.grid figure:nth-child(4n+1) .ph{background:var(--mustard)}
+.grid figure:nth-child(4n+2) .ph{background:var(--turquoise)}
+.grid figure:nth-child(4n+3) .ph{background:var(--coral);color:#fff}
+.grid figure:nth-child(4n) .ph{background:#ffe3a1}
+
+/* Opiniones */
+#opiniones{background:var(--mustard)}
+.badge{display:flex;width:fit-content;margin:0 auto 2rem;align-items:center;gap:.7rem;background:var(--cream);
+  border:3px solid var(--brown);border-radius:999px;padding:.6rem 1.4rem;font-family:'Fredoka',sans-serif;font-weight:600;
+  font-size:1.2rem;box-shadow:var(--shadow);flex-wrap:wrap;justify-content:center}
+.badge .g{font-weight:700;font-size:1.5rem;background:conic-gradient(#4285F4 0 25%,#34A853 0 50%,#FBBC05 0 75%,#EA4335 0);
+  -webkit-background-clip:text;background-clip:text;color:transparent}
+.stars{color:#E8A400;letter-spacing:2px}
+.reviews{display:grid;gap:1.5rem;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.review{background:#fff;border:3px solid var(--brown);border-radius:var(--r);padding:1.5rem;box-shadow:var(--shadow);margin:0}
+.review p{font-style:italic}
+.review footer{font-weight:800;border:0;position:static;background:none}
+.note{text-align:center;margin:1.5rem 0 0;font-weight:600}
+
+/* FAQ */
+details{background:#fff;border:3px solid var(--brown);border-radius:22px;margin-bottom:1rem;overflow:hidden;box-shadow:var(--shadow)}
+summary{cursor:pointer;list-style:none;padding:1.1rem 1.4rem;font-family:'Fredoka',sans-serif;font-weight:600;font-size:1.2rem;
+  display:flex;justify-content:space-between;gap:1rem;align-items:center}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";flex:none;width:2rem;height:2rem;border-radius:50%;background:var(--coral);color:#fff;display:grid;
+  place-items:center;border:2px solid var(--brown);transition:transform .25s}
+details[open] summary::after{transform:rotate(135deg)}
+details[open] summary{background:var(--mustard)}
+details .ans{padding:1rem 1.4rem 0}
+.faq{max-width:760px}
+
+/* Contacto */
+#contacto{background:var(--navy);color:var(--cream);padding-bottom:4rem}
+#contacto h2{color:#fff}
+.contact-grid{display:grid;gap:2rem}
+@media(min-width:860px){.contact-grid{grid-template-columns:1fr 1.2fr}}
+.info{background:var(--cream);color:var(--brown);border:3px solid var(--mustard);border-radius:var(--r);padding:1.6rem;box-shadow:var(--shadow)}
+.info dt{font-family:"Fredoka",sans-serif;font-weight:600;color:var(--navy);margin-top:.8rem}
+.info dd{margin:0}
+.info dd a{font-weight:800}
+.map{border:3px solid var(--mustard);border-radius:var(--r);overflow:hidden;min-height:320px;box-shadow:var(--shadow)}
+.map iframe{width:100%;height:100%;min-height:320px;border:0;display:block}
+.info .btn-row{margin-top:1.4rem}
+
+footer.site{background:var(--brown);border-top:4px solid var(--mustard);color:var(--cream);text-align:center;padding:1.5rem 1rem;font-weight:600}
+
+/* WhatsApp flotante */
+.wa{position:fixed;right:1rem;bottom:1rem;z-index:60;width:62px;height:62px;border-radius:50%;background:#25D366;
+  border:3px solid var(--brown);display:grid;place-items:center;box-shadow:0 5px 0 var(--brown);animation:pulse 2.6s infinite}
+.wa svg{width:34px;height:34px;fill:#fff}
+@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.08)}}
+
+/* Aparición suave */
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .6s ease,transform .6s ease}
+.reveal.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  .reveal{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap bar">
+    <a href="#hero" class="logo" id="logo"></a>
+    <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu">☰</button>
+    <nav id="menu" aria-label="Principal"><ul id="navList"></ul></nav>
+  </div>
+</header>
+
+<main>
+  <section id="hero">
+    <div class="wrap hero-grid">
+      <div class="reveal">
+        <span class="eyebrow" id="heroEyebrow"></span>
+        <h1 id="heroTitle"></h1>
+        <p class="lead" id="heroText"></p>
+        <div class="btn-row">
+          <a class="btn btn-coral" data-book id="heroBook" target="_blank" rel="noopener"></a>
+          <a class="btn btn-cream" data-whats id="heroWhats" target="_blank" rel="noopener"></a>
+        </div>
+        <p style="margin-top:1.2rem;font-weight:800" id="heroBadge"></p>
+      </div>
+      <div class="hero-art reveal" id="heroArt" role="img">
+        <span aria-hidden="true">🐶</span>
+        <span class="float f1" aria-hidden="true">🦴</span>
+        <span class="float f2" aria-hidden="true">🐾</span>
+        <span class="float f3" aria-hidden="true">⭐</span>
+      </div>
+    </div>
+    <div class="wave"><svg viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true"><path fill="#FFF8EC" d="M0 50C240 100 480 0 720 40s480 60 720 0V90H0z"/></svg></div>
+  </section>
+
+  <section id="servicios">
+    <div class="wrap">
+      <h2 id="svcTitle" class="reveal"></h2>
+      <p class="intro reveal" id="svcIntro"></p>
+      <div class="cards" id="svcCards"></div>
+      <h2 id="priceTitle" class="reveal" style="margin-top:3.5rem"></h2>
+      <p class="intro reveal" id="priceIntro"></p>
+      <div class="prices" id="priceGrid"></div>
+      <p class="note" id="priceFoot"></p>
+    </div>
+    <div class="wave"><svg viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true"><path fill="#2EC4B6" d="M0 40c240-60 480 40 720 10s480-50 720 10V90H0z"/></svg></div>
+  </section>
+
+  <section id="como-funciona">
+    <div class="wrap">
+      <h2 id="howTitle" class="reveal" style="margin-bottom:2.5rem"></h2>
+      <div class="steps" id="steps"></div>
+    </div>
+    <div class="wave"><svg viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true"><path fill="#FFF8EC" d="M0 50C240 0 480 100 720 50s480-40 720 0V90H0z"/></svg></div>
+  </section>
+
+  <section id="galeria">
+    <div class="wrap">
+      <h2 id="galTitle" class="reveal"></h2>
+      <p class="intro reveal" id="galIntro"></p>
+      <div class="grid" id="galGrid"></div>
+    </div>
+    <div class="wave"><svg viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true"><path fill="#FFC83D" d="M0 30c240 60 480 60 720 20s480-50 720 0V90H0z"/></svg></div>
+  </section>
+
+  <section id="opiniones">
+    <div class="wrap">
+      <h2 id="revTitle" class="reveal"></h2>
+      <div class="badge reveal"><span class="g">G</span><span class="stars" aria-hidden="true">★★★★★</span><span id="revBadge"></span></div>
+      <div class="reviews" id="revList"></div>
+      <p class="note" id="revNote"></p>
+    </div>
+    <div class="wave"><svg viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true"><path fill="#FFF8EC" d="M0 60C240 0 480 90 720 50s480-50 720 10V90H0z"/></svg></div>
+  </section>
+
+  <section id="faq">
+    <div class="wrap faq">
+      <h2 id="faqTitle" class="reveal" style="margin-bottom:2rem"></h2>
+      <div id="faqList"></div>
+    </div>
+    <div class="wave"><svg viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true"><path fill="#2E4475" d="M0 40c240 60 480-40 720 0s480 50 720-10V90H0z"/></svg></div>
+  </section>
+
+  <section id="contacto">
+    <div class="wrap">
+      <h2 id="ctTitle" class="reveal" style="margin-bottom:2rem"></h2>
+      <div class="contact-grid">
+        <div class="info reveal">
+          <dl style="margin:0" id="ctInfo"></dl>
+          <div class="btn-row">
+            <a class="btn btn-coral" data-book id="ctBook" target="_blank" rel="noopener"></a>
+            <a class="btn btn-turq" data-whats id="ctWhats" target="_blank" rel="noopener"></a>
+          </div>
+        </div>
+        <div class="map reveal"><iframe id="mapFrame" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site" id="foot"></footer>
+
+<a class="wa" id="waFloat" data-whats target="_blank" rel="noopener">
+  <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3C9 3 3.4 8.6 3.4 15.5c0 2.3.6 4.4 1.7 6.3L3 29l7.4-2c1.8 1 3.800 1.500 5.800 1.500 7 0 12.600-5.600 12.600-12.500S23 3 16 3zm0 22.800c-1.900 0-3.700-.5-5.200-1.500l-.4-.2-4.400 1.200 1.200-4.300-.3-.4a10.200 10.200 0 1 1 9.100 5.200zm5.600-7.600c-.3-.2-1.800-.9-2.100-1s-.5-.2-.7.200-.8 1-1 1.200-.4.200-.7.100a8.300 8.300 0 0 1-4.100-3.600c-.3-.5.300-.5.900-1.700.1-.2 0-.4 0-.5l-1-2.300c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.100-.8.400s-1 1-1 2.500 1.100 2.900 1.200 3.100c.2.200 2.100 3.300 5.200 4.600 1.900.8 2.700.9 3.600.8.600-.1 1.800-.7 2.100-1.500s.3-1.400.2-1.500-.3-.2-.6-.4z"/></svg>
+</a>
+
+<script>
+/* Render: lee las variables SITE y rellena la página. */
+const $ = id => document.getElementById(id);
+const el = (tag, cls, html) => { const e = document.createElement(tag); if (cls) e.className = cls; if (html != null) e.innerHTML = html; return e; };
+const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+const bookUrl = /^https?:\/\//.test(SITE.calendlyUrl) ? SITE.calendlyUrl : null;   // sin URL real, el botón baja a Contacto
+const whatsUrl = SITE.whatsappUrl + SITE.whatsappMsg;
+
+document.querySelectorAll('[data-book]').forEach(a => {
+  a.textContent = '📅 ' + SITE.hero.btnBook;
+  a.href = bookUrl || '#contacto';
+  if (!bookUrl) { a.removeAttribute('target'); }
+});
+document.querySelectorAll('[data-whats]').forEach(a => {
+  a.href = whatsUrl;
+  if (a.id === 'heroWhats' || a.id === 'ctWhats') a.textContent = '💬 ' + SITE.hero.btnWhats;
+  if (a.id === 'waFloat') a.setAttribute('aria-label', SITE.whatsFloatLabel);
+});
+
+$('logo').innerHTML = '<img src="img/logo.png" alt="Logo de Petville" width="46" height="46"> Pet<span>ville</span>';
+$('logo').setAttribute('aria-label', SITE.brand + ' – ' + SITE.brandFull);
+SITE.nav.forEach(([href, label]) => $('navList').append(el('li', '', `<a href="${href}">${esc(label)}</a>`)));
+$('navList').append(el('li', '', `<a class="btn btn-coral" href="${bookUrl || '#contacto'}" ${bookUrl ? 'target="_blank" rel="noopener"' : ''}>${esc(SITE.navCta)}</a>`));
+
+const H = SITE.hero;
+$('heroEyebrow').textContent = H.eyebrow; $('heroTitle').textContent = H.title; $('heroText').textContent = H.text;
+$('heroBadge').textContent = '⭐ ' + SITE.badge;
+$('heroArt').setAttribute('aria-label', H.imgAlt);
+// Para foto real en el hero: $('heroArt').innerHTML = '<img src="img/hero.jpg" alt="...">'
+
+$('svcTitle').textContent = SITE.services.title; $('svcIntro').textContent = SITE.services.intro;
+SITE.services.items.forEach(s => $('svcCards').append(el('article', 'card reveal ' + s.color,
+  `<span class="ico" aria-hidden="true">${s.icon}</span><h3>${esc(s.name)}</h3><p>${esc(s.text)}</p>`)));
+
+$('priceTitle').textContent = SITE.services.pricingTitle; $('priceIntro').textContent = SITE.services.pricingIntro;
+$('priceFoot').textContent = SITE.services.pricingFoot;
+SITE.services.pricing.forEach(g => {
+  const blocks = g.blocks.map(b =>
+    (b.title ? `<h4>${esc(b.title)}</h4>` : '') +
+    (b.rows ? `<ul>${b.rows.map(r => `<li><span>${esc(r[0])}</span><b>${esc(r[1])}</b></li>`).join('')}</ul>` : '') +
+    (b.text ? `<p class="txt">${esc(b.text)}</p>` : '')).join('');
+  $('priceGrid').append(el('article', 'price reveal ' + g.color,
+    `<h3>${esc(g.name)}</h3>${g.sub ? `<p class="sub">${esc(g.sub)}</p>` : ''}${blocks}${g.foot ? `<p class="foot">${esc(g.foot)}</p>` : ''}`));
+});
+
+$('howTitle').textContent = SITE.how.title;
+SITE.how.steps.forEach(s => $('steps').append(el('div', 'step reveal',
+  `<span class="n">${esc(s.n)}</span><h3>${esc(s.name)}</h3><p>${esc(s.text)}</p>`)));
+
+$('galTitle').textContent = SITE.gallery.title; $('galIntro').textContent = SITE.gallery.intro;
+SITE.gallery.items.forEach(g => {
+  const f = el('figure', 'reveal' + (g.wide ? ' wide' : ''));
+  if (g.src) f.innerHTML = `<img src="${esc(g.src)}" alt="${esc(g.alt)}" loading="lazy">`;
+  else f.innerHTML = `<div class="ph" role="img" aria-label="${esc(g.alt)}"><span><b aria-hidden="true">📷</b>${esc(SITE.gallery.placeholder)}</span></div>`;
+  $('galGrid').append(f);
+});
+
+$('revTitle').textContent = SITE.reviews.title; $('revBadge').textContent = SITE.badge; $('revNote').textContent = SITE.reviews.badgeNote;
+SITE.reviews.items.forEach(r => $('revList').append(el('figure', 'review reveal',
+  `<blockquote style="margin:0"><p>“${esc(r.text)}”</p></blockquote><figcaption><span class="stars" aria-label="5 estrellas">★★★★★</span><br><strong>${esc(r.author)}</strong> · ${esc(r.when)} en Google</figcaption>`)));
+
+$('faqTitle').textContent = SITE.faq.title;
+SITE.faq.items.forEach(f => $('faqList').append(el('details', 'reveal',
+  `<summary>${esc(f.q)}</summary><div class="ans"><p>${esc(f.a)}</p></div>`)));
+
+const C = SITE.contact;
+$('ctTitle').textContent = C.title;
+const social = C.social.map(s => /^https?:\/\//.test(s.url)
+  ? `<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.name)}</a>` : esc(s.name + ' ' + s.url)).join(' · ');
+$('ctInfo').innerHTML =
+  `<dt>📍 ${esc(C.addressLabel)}</dt><dd>${esc(SITE.address)}</dd>` +
+  `<dt>🕒 ${esc(C.hoursLabel)}</dt><dd>${esc(C.hours)}</dd>` +
+  `<dt>💬 ${esc(C.whatsLabel)}</dt><dd><a href="${whatsUrl}" target="_blank" rel="noopener">${esc(SITE.whatsappDisplay)}</a></dd>` +
+  `<dt>📸 ${esc(C.socialLabel)}</dt><dd>${social}</dd>`;
+$('mapFrame').src = 'https://www.google.com/maps?q=' + encodeURIComponent(SITE.mapQuery) + '&output=embed';
+$('mapFrame').title = C.mapTitle;
+$('foot').textContent = SITE.footer;
+
+/* Menú móvil */
+const burger = $('burger'), menu = $('menu');
+burger.addEventListener('click', () => {
+  const open = menu.classList.toggle('open');
+  burger.setAttribute('aria-expanded', open); burger.textContent = open ? '✕' : '☰';
+});
+menu.addEventListener('click', e => { if (e.target.closest('a')) { menu.classList.remove('open'); burger.setAttribute('aria-expanded', false); burger.textContent = '☰'; } });
+
+/* Aparición al hacer scroll */
+const io = 'IntersectionObserver' in window ? new IntersectionObserver(es => es.forEach(e => {
+  if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+}), { threshold: .12 }) : null;
+document.querySelectorAll('.reveal').forEach(n => io ? io.observe(n) : n.classList.add('in'));
+</script>
+</body>
+</html>
